@@ -19,6 +19,6 @@ function findLongestWord(sentence) {
 }
 
 
-const sentence = "";
+const sentence = "co Thuy dep gai";
 const longest = findLongestWord(sentence);
 console.log(longest);
