@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- bai 1 -->
+    <script type="text/javascript">
+        document.body.style.background = 'orange';
+    </script>
+
+    <!-- bai 2 -->
+    <input type="text" name="eingabe" value="Hallo1" id="e1">
+    <input type="text" name="eingabe" value="Hallo2" id="e2">
+    <input type="text" name="eingabe" value="Hallo3" id="e3">
+    <button id="nut1">+</button>
+    <button id="nut2">-</button>
+    <script type="text/javascript">
+        var inputs = document.getElementByName("eingabe");
+        for (var i = 0; i < inputs.length; i++)
+            inputs[i].value = "Olla" + i;
+        document.getElementById("e1").value = "Toll!"
+        document.getElementById("e1").style.color = "red";
+
+
+    </script>
+    // <!-- bai 3 -->
+    <p id="p1">Hello Word!</p>
+    <script type="text/javascript">
+        document.getElementById("p1").innerHTML = "New text!";
+    </script>
+    </script>
+
+
+</body>
+
+</html>
