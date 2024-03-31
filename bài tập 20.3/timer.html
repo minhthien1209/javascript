@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>A Sinus Animation</title>
+    <style type="text/css">
+        .pixel {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 2px;
+            height: 2px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var timer = window.setTimeout(drawSine, 10);
+        var x = 0.0;
+
+        function drawSine() {
+            var y = Math.sin(Math.PI * x++ / 100.0) * 100 + 200;
+            drawPixel(x, y);
+            timer = window.setTimeout(drawSine, 10);
+        }
+
+        function drawPixel(x, y) {
+            var newdiv = document.createElement("div");
+            newdiv.className = "pixel";
+            newdiv.style.top = y + "px";
+            newdiv.style.left = x + "px";
+            document.body.appendChild(newdiv);
+        }
+    </script>
+</body>
+
+</html>
