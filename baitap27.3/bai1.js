@@ -5,7 +5,7 @@ function getPhoneList(apiUrl) {
                 throw new Error('Yêu cầu không thành công. Mã trạng thái: ' + response.status);
             }
             return response.json();
-        })
+        })  
         .then(data => {
             return data;
         })
